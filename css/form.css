@@ -1,0 +1,108 @@
+* {
+    box-sizing: border-box;
+}
+form {
+    border-width: 4px;
+    border-style: inset;
+    padding: 10px;
+    margin: auto;
+    background-color: rgba(136, 236, 236, 0.12);
+}
+div label {
+    font-family: Helvetica Bold 18px;
+    text-shadow: 0px 0px 10px rgba(0, 0, 0, 0.20);
+    display: inline-block;
+    text-align: right;
+    width: 80px;
+    margin: 20px 15px 20px 10px;
+}
+#message {
+    vertical-align: top;
+}
+input {
+    border: none;
+}
+input[type=text], input[type=email] {
+    width: 80%;
+    padding: 5px;
+    margin: 10px auto 10px auto;
+    background: rgb(255, 255, 255);
+    border-radius: 5px;
+    transition: box-shadow 0.3s, border 0.3s;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.20);
+}
+input[type=text]:focus, input[type=email]:focus, textarea:focus, select:focus {
+    outline: none;
+    border: 2px solid rgb(199, 241, 240);
+    transition: box-shadow 0.3s, border 0.3s;
+}
+input[type=text]:hover, input[type=email]:hover, textarea:hover, select:hover, button[type=submit]:hover {
+    outline: none;
+    box-shadow: 0px 0px 20px rgba(129, 255, 247, 0.8);
+    transition: box-shadow 0.3s, border 0.3s;
+}
+textarea {
+    width: 80%;
+    height: 200px;
+    padding: 5px;
+    margin: 10px auto 10px auto;
+    background: rgb(255, 255, 255);
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.20);
+    overflow: auto;
+    resize: none;
+    border: none;
+}
+select {
+    width: 80%;
+    margin: 10px auto 10px auto;
+    padding: 5px;
+    border: none;
+    border-radius: 5px;
+    background-color: rgb(236, 231, 231);
+}
+
+/*I'm not totally sure how the pure css checkbox works, but i got it to work*/
+
+input[type=checkbox]:not(old) {
+    width: 2em;
+    margin: 0;
+    padding: 0;
+    font-size: 1em;
+    opacity: 0;
+}
+input[type=checkbox]:not(old)+ label {
+    display: inline-block;
+    margin-left: -2em;
+    line-height: 1.5em;
+}
+input[type=checkbox]:not(old)+ label> span {
+    display: inline-block;
+    width: 0.875em;
+    height: 0.875em;
+    margin: 0.25em 0.5em 0.25em 0.25em;
+    border: 0.0625em solid rgb(192, 192, 192);
+    border-radius: 0.25em;
+    background: rgb(224, 224, 224);
+    background-image: linear-gradient(rgb(240, 240, 240), rgb(224, 224, 224));
+    vertical-align: bottom;
+}
+input[type=checkbox]:not(old):checked+ label> span:before {
+    content: '✓';
+    display: block;
+    width: 1em;
+    color: rgb(153, 204, 102);
+    font-size: 0.875em;
+    line-height: 1em;
+    text-align: center;
+    text-shadow: 0 0 0.0714em rgb(115, 153, 77);
+    font-weight: bold;
+}
+button[type=submit] {
+    width: 40%;
+    height: 30px;
+    margin-top: 30px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}

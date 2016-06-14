@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title></title>
+    <meta charset="utf-8">
+    <meta name="description" content="Best Ice Cream in the World!">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/normalize.css" type="text/css">
+    <link rel="stylesheet" href="css/form.css" type="text/css">
+</head>
+
+<body>
+    <main>
+        <form action="https://formspree.io/your@email.com" method="post">
+            <div>
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" />
+            </div>
+            <div>
+                <label for="mail">Email:</label>
+                <input type="email" id="mail" name="email" placeholder="your_email_here@gmail.com" />
+            </div>
+            <div>
+                <label id="message" for="message">Message:</label>
+                <textarea id="message" name="message"></textarea>
+            </div>
+            <div>
+                <label for="referrer">Referrer:</label>
+                <select id="referrer" name="referrer">
+                    <option value=""></option>
+                    <option value="google">Google Search</option>
+                    <option value="friend">Friend</option>
+                    <option value="relative">Relative</option>
+                    <option value="co-worker">Co-Worker</option>
+                </select>
+            </div>
+            <div>
+                <!-- <label for="junk_optin">Receive Newsletter:</label> -->
+                <div>
+                  <input id="option" type="checkbox" name="field" value="option">
+                  <label for="option"><span><span></span></span>Receive Newsletter:</label>
+                <!-- </div>
+                <input type="hidden" name="junk_optin" value="n" />
+                <input type="checkbox" id="junk_optin" name="junk_optin" value="y" /> -->
+            </div>
+            <div>
+                <button type="submit">Send your message</button>
+            </div>
+        </form>
+    </main>
+</body>
+
+</html>
